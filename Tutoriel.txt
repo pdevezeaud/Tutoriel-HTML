@@ -1,0 +1,29 @@
+Apprendre à créer sa première page web.
+
+
+
+Explication HTML-CSS
+S'équiper pour créer sa page
+
+HTML : principales balises de mise en page
+		Squelette de base HTML (struture, indentation),
+		Balises de textes, 
+		Balises de lien, 
+		Balises d'images.
+		
+CSS : Balises de mise en page :
+
+		Ou placer son CSS
+		Polices, couleurs, bordures, mise en page...
+		Ciblage des éléments HTML avec les id et class
+		
+
+
+
+CSS
+
+Vous voilà maintenant avec le contenu de votre site, mais comme vous pouvez surement le constater, il n'est pas très beau !
+
+Pour mettre en forme tout ce texte et le sublimer, nous allons donc utiliser le CSS. 
+
+Le CSS 

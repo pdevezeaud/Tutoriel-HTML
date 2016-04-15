@@ -1,0 +1,872 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Apprendre à créer sa page Web !</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <img class="superman" src="img/superman.gif" alt="Superman">
+    <div class="container">
+        <div class="row">
+            <div class="principal">
+                <h1 class="titreprincipal">Créer votre premier site !</h1>
+
+                <h2>C’est quoi le HTML</h2> Tout d’abord sachez que le HTML n’est pas un langage de programmation. Il s’agit avant tout
+                <strong>d’un balisage de texte</strong>. HTML est la maternelle de votre navigateur, ce langage a été développé par Tim Berners-lee en 1990. Le but était de faciliter l’accès par des scientifiques d’universités aux documents de recherche de chacun. Vous devez vous douter du succès inespéré , il posa les fondations du web tel que nous le connaissons aujourd’hui. Imaginez simplement que vos préparez un texte pour une autre personne qui devra le mettre en page sur une machine spéciale sans avoir à réfléchir. Pour lui rendre la tache plus facile, vous devrez lui fournir un texte que la personne lira de haut en bas en suivant avec précision les indications que vous aurez inscrit (<em>type de polices, tailles, images à intégrer</em>). Ces indications pour plus de simplicité seront réduites au minimum en utilisant uniquement des abréviations de quelques lettres et en les plaçant entre les signes &lt; &gt; pour bien les distinguer du reste du texte. <strong>On appellera ces indications de mise en page : des balises !</strong>
+                <br/> Exemple :
+                <p>Je suis un <em>paragraphe</em> balisé en html</p>
+                Ce texte codé, dont nous venons de parler, sera en réalité lu par une machine(donc pas intelligente) et retranscrit tel quel !! Vous n’aurez alors que peu de droit à l’erreur et vous devrez être précis dans vos indications . Vous pouvez quand même revenir sur le code pour corriger si vous voyez que cela n’est pas cohérent. Donc HTML ce résume à ces quelques lettres (<strong>H</strong>yper <strong> T</strong>ext <strong> M</strong>arkup <strong>L</strong>anguage).
+                <br />
+                <strong>En résumé : HTML est un langage qui permet de présenter des informations sur internet.</strong>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 titre">
+                <h2>Début de l’apprentissage du HTML et du CSS</h2>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    Pour l’apprentissage du HTML et du CSS, je vous recommande d'utiliser des outils simples comme Blocnote (Windows), Notepad++, TextEdit (Mac) ou KEdit (KDE). Une fois que vous aurez intégré ces principes, vous pourrez facilement utiliser des outils plus avancés, ou des logiciels commerciaux tels que Style Master, Dreamweaver ou GoLive, Sublime text etc... Cependant pour votre première feuille de style CSS, il vaut mieux que vous ne soyez pas distrait par de nombreuses caractéristiques avancées.
+                </p>
+                <p>
+                    N'utilisez pas un logiciel de traitement de texte, tels que Microsoft Word ou OpenOffice, car ils produisent des fichiers qu'un navigateur Web ne sait pas lire. Pour HTML et CSS, nous voulons de simples fichiers texte.
+                </p>
+                <p>
+                    Pour débuter une page HTML il faut ouvrir votre éditeur de texte (Notepad, TextEdit, KEdit, etc., quel que soit votre éditeur favori), et commencer avec une fenêtre vide et de taper ceci:
+                </p>
+                <p>
+                    &lt;!DOCTYPE html&gt;
+                    <br /> &lt;html&gt;
+                    <br /> &nbsp;&nbsp;&nbsp;&lt;head&gt;
+                    <br /> &nbsp;&nbsp;&nbsp;&lt;title&gt;Premiers tests du CSS&lt;/title&gt;
+                    <br /> &nbsp;&nbsp;&nbsp;&lt;/head&gt;
+                    <br /> &nbsp;&nbsp;&nbsp;&lt;body&gt;
+                    <br /> &nbsp;&nbsp;&nbsp;&lt;/body&gt;
+                    <br /> &lt;/html&gt;
+                    <br />
+
+                </p>
+                <p>
+                    La balise !DOCTYPE est le premier élément censé apparaître dans le code d'une page html. Ce n'est pas une balise html à proprement parler mais un indicateur qui permet au navigateur de savoir quelles règles appliquer pour la mise en page du document. Elle définit :
+                    <ul>
+                        <li>La version HTML utilisée par ce document </li>
+                        <li>Le DTD (pour Document Type Definition) utilisé par le document </li>
+                    </ul>
+                </p>
+                <p>
+                    L'élément HTML Head (&lt;head&gt;) fournit des informations générales (métadonnées) sur le document, incluant son titre et des liens ou des définitions vers des scripts et feuilles de style.
+
+                </p>
+                <p>
+                    L'élément HTML Body &lt;body&gt; représente le contenu principal du document HTML. Il n'y a qu'un élément &lt;body&gt; par document.
+                </p>
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <!--Debut partie balise -->
+    <!--Structure d'une balise -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Les balises</h2>
+                <p>
+                    Les balises sont des étiquettes qui marquent le debut et la fin d'un élément. Toutes les balises ont le même format , elles commencent par un signe inférieur «
+                    < » et finissent par un signe supérieur «> ». Généralement parlant, il y a deux types de balises :
+                        <ul>
+                            <li>les balises ouvrantes ( &lt;balise A&gt; )</li>
+                            <li>les balises fermantes ( &lt;/balise A&gt; )</li>
+                        </ul>
+
+
+
+                        dont la seule différence entre les deux balises est la barre oblique « / » qui caractérise les balises fermantes.
+                </p>
+                <p>
+                    Les balises « &lt; &gt; » : marchent toujours par paires : &lt;balise A> «  contenu  »&lt;/balise A>
+                </p>
+
+                <p>
+                    Les balises peuvent s'imbriquer comme ceci : &lt;balise A&gt; &lt;balise B&gt; &lt;/balise B&gt; &lt;/balise A&gt;
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+    <!--Fin: structure balise -->
+    <!--Debut: balise Titre -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 ">
+                <h2>Les titres</h2> En HTML, les balises (H1, H2, H3, H4, H5, H6) sont utilisées afin d’encadrer les titres des contenus. En effet, afin d’augmenter la clarté et la compréhension d’un document, nous devons présenter quelque chose de clair et devons éviter de mettre des « pavés » de texte sans hiérarchisation des arguments ou des points abordés par le document. Ainsi, les balises H sont en charge d’améliorer l’expérience utilisateur, la compréhension par les moteurs de nos contenus, et plus encore. Par ailleurs, il est à noter que la balise H1 spécifie un titre très important et la balise H6 un titre peu important. Les balises présentes entre ces deux balises sont classées du titre le plus important au moins important.
+
+            </div>
+
+            <div class="col-md-offset-1 col-md-5 demo">
+                <h4>Dans notre HTML.</h4>
+                <p class="decalage bot-left">
+                    &lt;h1&gt;Titre h1&lt;/h1&gt;
+                    <br /> &lt;h2&gt;Titre h2&lt;/h2&gt;
+                    <br /> &lt;h3&gt;Titre h3&lt;/h3&gt;
+                    <br /> &lt;h4&gt;Titre h4&lt;/h4&gt;
+                    <br /> &lt;h5&gt;Titre h5&lt;/h5&gt;
+                    <br /> &lt;h6&gt;Titre h6&lt;/h6&gt;
+
+                </p>
+                <h4>Sur notre site.</h4>
+                <div class="decalage bot-left">
+
+                    <h1>Titre h1</h1>
+                    <h2>Titre h2</h2>
+                    <h3>Titre h3</h3>
+                    <h4>Titre h4</h4>
+                    <h5>Titre h5</h5>
+                    <h6>Titre h6</h6>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--Fin: structure titre -->
+    <!--Debut: structure paragraphe -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>La balise p</h2> La balise &lt;p&gt; (paragraphe) permet le découpage du texte en ajoutant l'équivalent de deux retours chariot sur une machine à écrire ou d'un retour à la ligne suivi d'une ligne vide dans un traitement de texte. Rendu standard du paragraphe : Contenu précédent le paragraphe ...
+                <p>La balise paragraphe effectue une séparation avec le texte ou l'élément qui la précède et qui la suit. Il ne fait pas de décalage par rapport au bord.</p>
+                Contenu suivant le paragraphe ...
+
+            </div>
+            <div class="col-md-offset-1 col-md-5 demo">
+
+                <h4>Dans notre HTML.<h4>
+      <p>
+        &lt;p&gt;Notre paragraphe&lt;/p&gt;
+
+      </p>
+      <h4>Sur notre site.</h4>
+                <p>
+                    <p>Notre paragraphe</p>
+
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+    <!--Fin: structure paragraphe -->
+    <!--Debut: mise en valeur -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 titre">
+                <h2>Mettre en valeur ces informations</h2>
+            </div>
+        </div>
+    </div>
+
+    <!--Debut: structure italique -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Balise <em>Italique</em></h3>
+
+                <p>
+                    Au sein de vos paragraphes, certains mots sont parfois plus importants que d'autres et vous aimeriez les faire ressortir. HTML vous propose différents moyens de mettre en valeur le texte de votre page.
+                </p>
+
+                <p>
+                    Pour mettre un peu en valeur votre texte, vous devez utiliser la balise &lt;em&gt; &lt;/em&gt;. Cette balise a pour conséquence de mettre en italique le contenu.
+                </p>
+            </div>
+            <div class="col-md-offset-1 col-md-5 demo">
+                <h4>Dans notre HTML.</h4>
+                <p>
+                    &lt;p&gt;Bonjour et bienvenue sur mon site !&lt;br/&gt;(le &lt;br /&gt; permet de passer à la ligne)
+                    <br /> Ceci est mon premier test alors &lt;em&gt;soyez indulgents&lt;/em&gt; s'il vous plaît, j'apprends petit à petit comment cela marche.&lt;/p&gt;
+
+                </p>
+
+                <h4>Sur notre site.</h4>
+                <p>
+                    <p>Bonjour et bienvenue sur mon site !
+                        <br /> Ceci est mon premier test alors <em>soyez indulgents</em> s'il vous plaît, j'apprends petit à petit comment cela marche.</p>
+
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+    <!--Fin: structure italique -->
+    <!--Debut: structure gras -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Mettre en <strong>gras</strong></h3>
+                <p>
+                    Dans le même registre nous avons la possibilité de mettre <strong>en gras</strong> un mot ou une portion de texte pour en indiqué l’importance. Nous utiliserons à cet effet la balise &lt;strong&gt; &lt;/strong&gt;
+                </p>
+            </div>
+            <div class="col-md-offset-1 col-md-5 demo">
+                <h4>Dans notre HTML.</h4>
+                <p>
+                    &lt;p&gt;&lt;strong&gt;Bonjour et bienvenue sur mon site&lt;/strong&gt; !&lt;br /&gt;
+                    <br /> Ceci est mon premier test alors &lt;em&gt;soyez indulgents&lt;/em&gt; s'il vous plaît, j'apprends petit à petit comment cela marche.&lt;/p&gt;
+
+                </p>
+                <h4>Sur notre site.</h4>
+                <p>
+                    <p><strong>Bonjour et bienvenue sur mon site</strong> !
+                        <br /> Ceci est mon premier test alors <em>soyez indulgents</em> s'il vous plaît, j'apprends petit à petit comment cela marche.</p>
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!--Debut: structure gras -->
+    <!--Debut: structure surligner -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Marquer le texte</h3>
+                <p>
+                    La balise &lt;mark&gt; &lt;/mark&gt; permet de faire ressortir visuellement une portion de texte. L'extrait n'est pas forcément considéré comme important mais on veut qu'il se distingue bien du reste du texte.
+
+                </p>
+              
+            </div>
+            <div class="col-md-offset-1 col-md-5 demo">
+
+                <h4>Dans notre Html.</h4>
+                <p>
+                    &lt;p&gt;&lt;strong&gt;Bonjour et bienvenue sur mon site&lt;/strong&gt; !&lt;br /&gt;
+                    <br /> Ceci est mon premier test alors &lt;em&gt;soyez indulgents&lt;/em&gt; s'il vous plaît, &lt;mark&gt;j'apprends&lt;/mark&gt; petit à petit comment cela marche.&lt;/p&gt;
+
+                </p>
+                <h4>Sur notre site.</h4>
+                <p>
+                    <p><strong>Bonjour et bienvenue sur mon site</strong> !
+                        <br /> Ceci est mon premier test alors <em>soyez indulgents</em> s'il vous plaît,
+                        <mark>j'apprends</mark> petit à petit comment cela marche.
+                    </p>
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+    <!--Fin: structure surligner -->
+    <!--Fin: mise en valeur -->
+    <!--Debut: structure liste -->
+
+    <div class="container">
+        <div class="row ">
+            <div class="col-md-12 titre">
+                <h2>Les Listes</h2>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                Les listes nous permettent souvent de mieux structurer notre texte et d'ordonner nos informations. Nous avons deux types de liste :
+                <ul>
+                    <li>Non ordonnée
+                        <br /> &lt;ul&gt;
+                        <br /> &lt;li&gt;contenu&lt;/li&gt;
+                        <br /> &lt;li&gt;contenu&lt;/li&gt;
+                        <br /> &lt;li&gt;contenu&lt;/li&gt;
+                        <br /> &lt;/ul&gt;
+
+                    </li>
+                    <li>Ordonnée
+                        <br /> &lt;ol&gt;
+                        <br /> &lt;li&gt;contenu&lt;/li&gt;
+                        <br /> &lt;li&gt;contenu&lt;/li&gt;
+                        <br /> &lt;li&gt;contenu&lt;/li&gt;
+                        <br /> &lt;/ol&gt;
+
+                    </li>
+                </ul>
+
+            </div>
+            <div class="col-md-offset-1 col-md-3 demo">
+                <h3>Liste non ordonnée.</h3>
+                <h4>Dans notre Html </h4>
+                <p>
+                    Mes animaux: &lt;ul&gt;
+                    <br /> &lt;li&gt;Chien&lt;/li&gt;
+                    <br /> &lt;li&gt;Chat&lt;/li&gt;
+                    <br /> &lt;li&gt;Poisson rouge&lt;/li&gt;
+                    <br /> &lt;/ul&gt;
+                </p>
+                <h4>Sur notre site </h4>
+                <p>
+                    Mes animaux:
+                    <ul>
+                        <li>Chien</li>
+                        <li>Chat</li>
+                        <li>Poisson rouge</li>
+                    </ul>
+                </p>
+
+            </div>
+            <div class="col-md-offset-1 col-md-3 demo">
+                <h3>Liste ordonnée.</h3>
+                <h4>Dans notre Html </h4>
+                <p>
+                    Mes animaux: &lt;ol&gt;
+                    <br /> &lt;li&gt;Chien&lt;/li&gt;
+                    <br /> &lt;li&gt;Chat&lt;/li&gt;
+                    <br /> &lt;li&gt;Poisson rouge&lt;/li&gt;
+                    <br /> &lt;/ol&gt;
+                </p>
+
+                <h4>Sur notre site </h4>
+                <p>
+                    Mes animaux:
+                    <ol>
+                        <li>Chien</li>
+                        <li>Chat</li>
+                        <li>Poisson rouge</li>
+                    </ol>
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+    <!--Fin: structure liste -->
+    <!--Debut: structure lien -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 titre">
+                <h2>Un lien vers un autre site</h2>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p>
+                    Il est facile de reconnaître les liens sur une page : ils sont écrits d'une façon différente (par défaut, en bleu et soulignés) et un curseur en forme de main apparaît lorsqu'on pointe dessus. 
+                    <br /> Vous trouverez des informations sur les technologies à cette adresse : <a href="#">SimplonTechno.com</a>
+
+                </p>
+                <p>
+                    Pour faire un lien, la balise que nous allons utiliser est très simple à retenir : &lt;a&gt;. Il faut cependant lui ajouter un attribut, href, pour indiquer vers quelle page le lien doit conduire.
+                    <br> &lt;a href="adresse du site"&gt;nom du site&lt;/a&gt;
+                </p>
+            </div>
+            <div class="col-md-offset-1 col-md-5 demo">
+                <h4>Dans notre Html.</h4>
+                <p>
+                    &lt;a href="http://simplon.co/simplonline-la-formation-a-distance/"&gt;Simplon&lt;/a&gt;
+                </p>
+                <h4>Sur notre site.</h4>
+                <p>
+                    <a href="http://simplon.co/simplonline-la-formation-a-distance/">Simplon</a>
+                </p>
+                <p>
+                    Les liens que nous venons de voir sont appelés <strong>liens absolus</strong> car on indique l'adresse complète.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!--Fin: structure lien -->
+    <!--Debut: structure image -->
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 titre">
+                <h2>Les Images</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    La balise <strong>img</strong> du langage HTML permet d'insérer des images dans une page HTML. L'image peut être située sur le même serveur que la page dans laquelle elle est insérée mais également sur un autre serveur en spécifiant son <strong>URL complète</strong>. Insérer une image dans une page web ? Vous allez voir, c'est d'une facilité déconcertante… Enfin presque. Il existe différents formats d'image que l'on peut utiliser sur des sites web, et on ne doit pas les choisir au hasard. En effet, les images sont parfois volumineuses à télécharger, ce qui ralentit le temps de chargement de la page.
+                </p>
+                <p>
+                    Les différents formats d’images :
+                    <br />
+                    <ul>
+                        <li><strong>Le JPEG </strong>: Les images JPEG sont enregistrées avec l'extension .jpg ou .jpeg.</li>
+                        <li><strong>Le PNG </strong>: Ce format est adapté à la plupart des graphiques (je serais tenté de dire « à tout ce qui n'est pas une photo »). Le PNG a deux gros avantages : il peut être rendu transparent et il n'altère pas la qualité de l'image.</li>
+                        <li><strong>Le GIF </strong>: Le format GIF est limité à 256 couleurs (alors que le PNG peut aller jusqu'à plusieurs millions de couleurs). Néanmoins, le GIF conserve un certain avantage que le PNG n'a pas : il peut être animé. D'où l'explosion ces dernières années des GIF animés sur le web (aussi appelé "reaction gifs").</li>
+                    </ul>
+                </p>
+                <p>
+                    Il existe un format adapté à chaque image.
+                    <br /> Si on résume, voici quel format adopter en fonction de l'image que vous avez :
+                    <br />
+                    <ul>
+                        <li><strong>Une photo </strong>: utilisez un JPEG.</li>
+                        <li><strong>N'importe quel graphique avec peu de couleurs </strong>(moins de 256) : utilisez un PNG 8 bits ou éventuellement un GIF.</li>
+                        <li><strong>N'importe quel graphique avec beaucoup de couleurs </strong>: utilisez un PNG 24 bits.</li>
+                        <li><strong>Une image animée </strong>: utilisez un GIF animé.</li>
+                    </ul>
+                </p>
+                <p>
+                    Bon voyons comment nous pouvons insérer une image dans du code HTML :
+                    <br /> Quelle est la fameuse balise qui va nous permettre d'insérer une image ? Il s'agit de… &lt;img /&gt; !
+                    <br /> La balise doit être accompagnée de deux attributs obligatoires :
+                    <br />
+                    <ul>
+                        <li><strong>src </strong>: il permet d’indiquer ou se trouve l’image que l’on veut insérer.</li>
+                        <li><strong>alt </strong>: cela signifie « texte alternatif ». On doit toujours indiquer un texte alternatif à l'image, c'est-à-dire un court texte qui décrit ce que contient l'image.</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h3>La balise Img</h3>
+                <p>
+                    Voici une photo que j'ai prise lors de mes dernières vacances à la montagne :
+                    <br /> &lt;img src="adress de l'image" alt="texte alternatif" /&gt;
+                    <img class="img-responsive" src="http://img0.mxstatic.com/wallpapers/0520c9d9279235035c89c65742642fad_large.jpeg" alt="Photo de montagne" /> Pour ceux qui se demanderaient pourquoi il n’y a pas de balise fermante ? Certaines balises n’ont pas l’obligation d’être fermées pour fonctionner, tel que img, br.
+            </div>
+            <div class="col-md-offset-1 col-md-5 demo">
+                <h4>Dans notre Html.</h4>
+                </p>
+                <p>
+                    &lt;img src="images/montagne.jpg" alt="Photo de montagne" /&gt;
+                </p>
+                <h4>Sur notre site.</h4>
+                <p>
+                    <img class="img-responsive" src="http://img0.mxstatic.com/wallpapers/0520c9d9279235035c89c65742642fad_large.jpeg" alt="Photo de montagne" />
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+    <!--Fin: structure image -->
+    <!--Debut: struture <br /> -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 titre">
+                <h2>La balise BR</h2>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p>
+                    La balise &lt;br&gt; insère un saut de ligne unique. Elle permet un retour à la ligne sans séparer le paragraphe. La balise &lt;br&gt; est une balise vide, ce qui signifie qu’elle n’a pas de balise de fermeture. Elle s’écrit &lt;br /&gt; (avec un espace devant le /)
+                </p>
+            </div>
+            <div class="col-md-offset-1 col-md-5 demo">
+                <h4>Dans notre html</h4>
+                <p>
+                    &lt;p&gt;Bonjour et bienvenue sur mon site!&lt;br /&gt;Ceci est mon premier test alors soyez indulgents s'il vous plaît, j'apprends petit à petit comment cela marche. &lt;/p&gt;
+                </p>
+                <h4>Sur notre site</h4>
+                <p>
+                    <p>Bonjour et bienvenue sur mon site!
+                        <br />Ceci est mon premier test alors soyez indulgents s'il vous plaît, j'apprends petit à petit comment cela marche.
+                    </p>
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 titre">
+                <h2>Les balises universelles</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    En fait, on a inventé deux balises dites universelles, qui n'ont aucune signification particulière (elles n'indiquent pas que le mot est important, par exemple). Il y a une différence minime (mais significative !) entre ces deux balises :
+                    <ul>
+                        <li>&lt;span&gt; &lt;/span&gt; : c'est une balise de type inline, c'est-à-dire une balise que l'on place au sein d'un paragraphe de texte, pour sélectionner certains mots uniquement. Les balises &lt;strong&gt; et &lt;em&gt;sont de la même famille. Cette balise s'utilise donc au milieu d'un paragraphe et c'est celle dont nous allons nous servir pour colorer « bienvenue ».</li>
+                        <li>&lt;div&gt; &lt;/div&gt; : c'est une balise de type block, qui entoure un bloc de texte. Les balises &lt;p&gt;,&lt;h1&gt;, etc. sont de la même famille. Ces balises ont quelque chose en commun : elles créent un nouveau « bloc » dans la page et provoquent donc obligatoirement un retour à la ligne.
+                            <div> est une balise fréquemment utilisée dans la construction d'un design, comme nous le verrons plus tard.
+                        </li>
+                    </ul>
+                </p>
+
+                </div>
+            </div>
+        </div>
+
+        <!--Fin: struture <br /> -->
+        <!--Debut: cours css -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="titreprincipal">Les CSS</h1>
+                    <h2>Principe CSS :</h2>
+                    <p>
+                        Petit rappel : à quoi sert CSS ? CSS ? C'est lui qui vous permet de choisir la couleur de votre texte. Lui qui vous permet de sélectionner la police utilisée sur votre site. Lui encore qui permet de définir la taille du texte, les bordures, le fond…
+
+                    </p>
+
+                    <h2>Ou écrit-on le CSS ?</h2>
+
+                    <p>
+                        Vous avez le choix car on peut écrire du code en langage CSS à trois endroits différents :
+                        <ul>
+                            <li>dans l'en-tête &lt;head&gt; du fichier HTML </li>
+                            <li>directement dans les balises du fichier HTML via un attribut style (méthode la moins recommandée).</li>
+                            <li>dans un fichier .css (méthode la plus recommandée) </li>
+                        </ul>
+
+                    </p>
+
+                    <p>
+                        <h4>Dans l'en-tête &lt;head&gt; du fichier HTML</h4> Cela consiste à insérer le code CSS directement dans une balise &lt;style&gt; à l'intérieur de l'en-tête &lt;head&gt;.
+                        <br /> &lt;!DOCTYPE html&gt;
+                        <br /> &lt;html&gt;
+                        <br /> &nbsp;&nbsp;&nbsp;&lt;head&gt;
+                        <br /> &nbsp;&nbsp;&nbsp;&lt;meta charset="utf-8" /&gt;
+                        <br />
+                        <mark>&nbsp;&nbsp;&nbsp;&lt;style&gt;
+                            <br /> &nbsp;&nbsp;&nbsp;p{color: blue;}
+                            <br> &nbsp;&nbsp;&nbsp;&lt;/style&gt;
+                        </mark>
+                        <br /> &nbsp;&nbsp;&nbsp;&lt;title&gt;Premiers tests du CSS&lt;/title&gt;
+                        <br /> &nbsp;&nbsp;&nbsp;&lt;/head&gt;
+                        <br /> &nbsp;&nbsp;&nbsp;&lt;body&gt;
+                        <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Mon super site&lt;/h1&gt;
+                        <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Bonjour et bienvenue sur mon site !&lt;/p&gt;
+                        <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Pour le moment, mon site est un peu &lt;em&gt;vide&lt;/em&gt;. Patientez encore un peu !&lt;/p&gt;
+                        <br /> &nbsp;&nbsp;&nbsp;&lt;/body&gt;
+                        <br /> &lt;/html&gt;
+                        <br />
+                    </p>
+                    <p>
+                        <h4>Directement dans les balises (non recommandé)</h4> &lt;!DOCTYPE html&gt;
+                        <br /> &lt;html&gt;
+                        <br /> &nbsp;&nbsp;&nbsp;&lt;head&gt;
+                        <br /> &nbsp;&nbsp;&nbsp;&lt;meta charset="utf-8" /&gt;
+                        <br /> &nbsp;&nbsp;&nbsp;&lt;title&gt;Premiers tests du CSS&lt;/title&gt;
+                        <br /> &nbsp;&nbsp;&nbsp;&lt;/head&gt;
+                        <br /> &nbsp;&nbsp;&nbsp;&lt;body&gt;
+                        <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Mon super site&lt;/h1&gt;
+                        <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p
+                        <mark>style="color: blue;"</mark>&gt;Bonjour et bienvenue sur mon site !&lt;/p&gt;
+                        <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Pour le moment, mon site est un peu &lt;em&gt;vide&lt;/em&gt;. Patientez encore un peu !&lt;/p&gt;
+                        <br /> &nbsp;&nbsp;&nbsp;&lt;/body&gt;
+                        <br /> &lt;/html&gt;
+                        <br />
+                    </p>
+                    <p>
+                        <h4>Feuille de style externe</h4> &lt;!DOCTYPE html&gt;
+                        <br /> &lt;html&gt;
+                        <br /> &nbsp;&nbsp;&nbsp;&lt;head&gt;
+                        <br /> &nbsp;&nbsp;&nbsp;&lt;meta charset="utf-8" /&gt;
+                        <br /> &nbsp;&nbsp;&nbsp;&lt;title&gt;Premiers tests du CSS&lt;/title&gt;
+                        <br />
+                        <mark>&nbsp;&nbsp;&nbsp;&lt;link rel="stylesheet" href="monstyle.css"&gt;</mark>
+                        <br /> &nbsp;&nbsp;&nbsp;&lt;/head&gt;
+                        <br />
+                    </p>
+                    <p>
+                        Ceci indiquera au navigateur que la feuille de style se trouve dans le fichier nommé "monstyle.css" et puisqu'aucun répertoire n'est mentionné, le navigateur regardera dans le même répertoire que le fichier HTML. Si vous sauvez votre fichier HTML et le rechargez dans votre navigateur, vous ne devriez voir aucun changement: la page a toujours le même style, mais celui-ci provient maintenant d'un fichier externe. Bien sur il faut au préalable avoir crée ce fichier dans le répertoire de travail sinon cela ne va pas le faire :=) !!!!
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-12 titre">
+                    <h2>Cascading Style Sheets</h2>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>
+                        Le design d'un site évolue toujours au fil du temps. Le problème, lorsqu'on n'utilise pas de feuilles de style, c'est qu'il faut reprendre toutes les pages une à une pour modifier une police de caractère ou une couleur de fond. Avec les "Cascading Style Sheets" (CSS), ce lourd handicap est résolu.
+                    </p>
+                    <p>
+                        <h3>Balise HTML de base :</h3> Pour comprendre le fonctionnement du langage CSS, il est nécessaire d'avoir quelques notions en (x)html. Le html est un langage simple, fait de balises (du genre &lt;tag&gt;) qui ont toutes une fonction et un sens. C'est ce qu'on appelle la sémantique.
+                        <br /> Respecter la sémantique, c'est améliorer l'accessibilité... et aussi le référencement. Cela dit, on ne perdra jamais de vue que l'humain passe avant les robots ! On fait un site pour des utilisateurs, pas pour le plaisir de se retrouver en tête de requêtes sur google.
+                    </p>
+                    <p>
+                        <h3>Feuille de style de base:</h3> Une feuille de style CSS externe peut se faire avec le simple bloc-note, et il est d'usage de lui faire porter l'extension .css. On la liera ensuite à la page html à l'aide d'un Link placé dans l'en-tête de la page.
+                        <br /> Mais on peut aussi déclarer les styles dans l'en-tête de la page, ou au sein des balises elles-mêmes. Cela peut-être intéressant pour appliquer des styles spécifiques et ils auront un ordre de priorité plus important. C'est ce qu'on appelle la "cascade".
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 titre">
+                    <h2>Appliquer un style à une balise : Sélectionner la balise</h2>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>
+                        Le formatage du texte est une des étapes les plus importantes, nous allons voir de plus près comment nous allons procéder.<strong> Pour modifier la taille du texte, on utilise la propriété CSS font-size. Mais comment indiquer la taille du texte ? Tout simplement !!  On tape font-size puis on ouvre des accolades (bien penser à refermer sinon rien ne va marcher). Entre ces accolades vous placez votre code comme ceci :</strong>
+                    </p>
+                    <p>
+                        Comment faut-il faire:
+                        <ol>
+                            <li>Dans un premier temps on sélectionne la balise du texte que l’on veut modifier. Par exemple, si je veux modifier l'apparence de tous les paragraphes
+                                <p>, je dois écrire p.</li>
+                            <li>On ouvre des accolades { et on pense bien sur à les fermer }.</li>
+                            <li>Des propriétés CSS : les « effets de style » de la page sont rangés dans des propriétés. Il y a par exemple la propriété color qui permet d'indiquer la couleur du texte, font-size qui permet d'indiquer la taille du texte, etc. Il y a beaucoup de propriétés CSS et je ne vous obligerai pas à les connaître toutes par cœur.</li>
+                            <li>Les valeurs : pour chaque propriété CSS, on doit indiquer une valeur. Par exemple, pour la propriété color, il faut indiquer le nom de la couleur. Pour font-size, il faut indiquer quelle taille on veut, etc.</li>
+                        </ol>
+                        </p>
+                </div>
+                <div class="col-md-offset-1 col-md-5 demo">
+                    <h4>Dans notre CSS</h4>
+                    <p>
+                        H1 {Font-size : 15px ;}(ici on a "font-size" pour modifier la taille du texte contenu entre les balise h1)
+                        <br /> p{color: blue;}(ici on a "color" pour modifier la couleur du texte contenu entre les balises p)
+                    </p>
+                    <p>
+                        <h4>Shematiquement:</h4> balise1
+                        <br /> {
+                        <br /> propriete1: valeur1;
+                        <br /> propriete2: valeur2;
+                        <br /> propriete3: valeur3;
+                        <br /> }
+                        <br /> balise2
+                        <br /> {
+                        <br /> propriete1: valeur1;
+                        <br /> propriete2: valeur2;
+                        <br /> propriete3: valeur3;
+                        <br /> propriete4: valeur4;
+                        <br /> }
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 titre">
+                    <h2>Appliquer un style à un Id et à une Class :</h2>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>
+                        Ce que je vous ai montré jusqu'ici a quand même un défaut : cela implique par exemple que TOUS les paragraphes possèdent la même présentation (ici, ils seront donc tous écrits en bleu). Comment faire pour que certains paragraphes seulement soient écrits d'une manière différente ? On pourrait placer le code CSS dans un attribut style sur la balise que l'on vise (c'est la technique que je vous ai présentée un peu plus tôt) mais, comme je vous l'ai dit, ce n'est pas recommandé (il vaut mieux utiliser un fichier CSS externe).
+                    </p>
+                    <p>
+                        Pour résoudre le problème, on peut utiliser ces attributs spéciaux qui fonctionnent sur toutes les balises :
+                        <ul>
+                            <li>L'attribut class </li>
+                            Pour associer une classe a une balise p on fait:
+                            <br /> Dans notre Html:
+                            <br /> &lt;p class="introduction"&gt;Bonjour et bienvenue sur mon site !&lt;/p&gt; pour le modifier :
+                            <br /> Dans notre CSS:
+                            <br /> .introduction{color: blue;}
+                            <li>L'attribut id</li>
+                            Pour associer une id a une balise p on fait:
+                            <br /> Dans notre Html:
+                            <br /> &lt;p id="introduction"&gt;Bonjour et bienvenue sur mon site !&lt;/p&gt; pour le modifier :
+                            <br /> Dans notre CSS:
+                            <br /> #introduction{color: blue;}
+
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 titre">
+                    <h2>Quelques propriétés CSS</h2>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Notre HTML</h3>
+                    <p>
+                        Pour changer la couleur d'un texte il faut utiliser la propriété "color"
+                        <br /> &lt;p class="bleu"&gt;Je suis un paragraphe de couleur bleue&lt;/p&gt;
+                    </p>
+                </div>
+                <div class="col-md-offset-1 col-md-3">
+                    <h3>Notre CSS</h3>
+                    <p>
+                        Pour que notre paragraphe soit en bleu, on reprend notre class dans notre CSS et on ajoute la propriété "color" plus le nom de la couleur désirée en anglais.
+                        <br /> .bleu{color:blue;}
+                    </p>
+                </div>
+                <div class="col-md-offset-1 col-md-3 demo">
+                    <h3>Notre Site</h3>
+                    <p class="bleu">
+                        Je suis un paragraphe de couleur bleue
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Notre html</h3>
+                    <p>
+                        Pour changer la taille d'un texte il faut utiliser la propriété "font-size"
+                        <br /> &lt;p class="taille"&gt;Je suis un paragraphe de 20 px.&lt;/p&gt;
+                    </p>
+                </div>
+                <div class="col-md-offset-1 col-md-3">
+                    <h3>Notre CSS</h3>
+                    <p>
+                        Pour changer la taille de notre paragraphe on reprend notre class dans notre CSS et on ajoute la propriété "font-size" plus la taille désirée en px.
+                        <br /> .taille{font-size:20px;}
+                    </p>
+                </div>
+                <div class="col-md-offset-1 col-md-3 demo">
+                    <h3>Notre Site</h3>
+                    <p class="taille">
+                        Je suis un paragraphe de 20 px.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3>Notre html</h3>
+                        <p>
+                            Pour changer la police d'un texte il faut utiliser la propriété "font-family"
+                            <br /> &lt;p class="police"&gt;Je suis un paragraphe écrit dans une police super fun!!!!!&lt;/p&gt;
+                        </p>
+                    </div>
+                    <div class="col-md-offset-1 col-md-3">
+                        <h3>Notre CSS</h3>
+                        <p>
+                            Pour changer la taille de notre paragraphe on reprend notre class dans notre CSS et on ajoute la propriété "font-size" plus la taille désirée en px.
+                            <br /> .police{font-size: 'sketch';}
+                        </p>
+                    </div>
+                    <div class="col-md-offset-1 col-md-3 demo">
+                        <h3>Notre Site</h3>
+                        <p class="police">
+                            Je suis un paragraphe écrit dans une police super fun!!!!!
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3>Notre html</h3>
+                        <p>
+                            Pour changer la taille d'un élément il faut utiliser les propriétés "height(pour la hauteur) et width(pour la largeur)".
+                            <br /> Pour faire apparaitre les bordures d'un élement il faut utiliser la propriété "border".
+                            <br /> Pour changer le fond d'un élément il faut utiliser la propriété "background-color".
+                            <br /> &lt;div class="relooking"&gt;Je suis une div qui a reçu un grand relooking!!!!!&lt;/div&gt;
+                        </p>
+                    </div>
+                    <div class="col-md-offset-1 col-md-3">
+                        <h3>Notre CSS</h3>
+                        <p>
+                            .relooking{height: 100px;
+                            <br /> width: 200px;
+                            <br /> border: 1px solid black;
+                            <br /> background-color: pink;
+                            <br /> }
+                        </p>
+                    </div>
+                    <div class="col-md-offset-1 col-md-3 demo">
+                        <h3>Notre Site</h3>
+                        <div class="relooking">
+                            Je suis une div qui a reçu un grand relooking!!!!!
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <footer>
+                <p>© Tutoriel By Guillaume - Philippe - Mathieu</p>
+            </footer>
+
+</body>
+
+</html>
